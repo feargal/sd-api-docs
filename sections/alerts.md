@@ -20,7 +20,7 @@ Returns the full history for each time a specific alert has been triggered.
 
 **Request**
 
-```GET https://api.serverdensity.com/VERSION/alerts/getHistory?account=example.serverdensity.com&alertId=4f86b63aff4bb6fc03000015```
+`GET https://api.serverdensity.com/VERSION/alerts/getHistory?account=example.serverdensity.com&alertId=4f86b63aff4bb6fc03000015`
 
 **Response**
 ```json
@@ -67,13 +67,13 @@ Returns the full history for each time a specific alert has been triggered.
 
 Get last
 --
-``GET /alerts/getLast``
+`GET /alerts/getLast`
 
 Returns the last 5 triggered alerts across the whole account.
 
 **Request**
 
-```GET https://api.serverdensity.com/1.4/alerts/getLast?account=example.serverdensity.com```
+`GET https://api.serverdensity.com/1.4/alerts/getLast?account=example.serverdensity.com`
 
 **Response**
 ```json
@@ -123,13 +123,13 @@ Returns the last 5 triggered alerts across the whole account.
 
 Get open
 --
-```GET /alerts/getOpen```
+`GET /alerts/getOpen`
 
 Returns the current open, non-fixed alerts.
 
 **Request**
 
-```https://api.serverdensity.com/1.4/alerts/getOpen?account=example.serverdensity.com```
+`https://api.serverdensity.com/1.4/alerts/getOpen?account=example.serverdensity.com`
 
 **Response**
 
@@ -182,13 +182,13 @@ Returns the current open, non-fixed alerts.
 
 Get open notified
 --
-```GET /alerts/getOpenNotified```
+`GET /alerts/getOpenNotified`
 
 Returns the current open, non-fixed alerts which have sent notifications. This is contrasted with the [getOpen](#get-open) method which returns all open alerts whether or not notifications have been sent. Notifications might not yet have been sent if a delay is set up in the alert configuration.
 
 **Request**
 
-```https://api.serverdensity.com/1.4/alerts/getOpenNotified?account=example.serverdensity.com```
+`https://api.serverdensity.com/1.4/alerts/getOpenNotified?account=example.serverdensity.com`
 
 **Response**
 
@@ -240,13 +240,13 @@ Returns the current open, non-fixed alerts which have sent notifications. This i
 
 List
 --
-```GET /alerts/list```
+`GET /alerts/list`
 
 Returns all configured alerts.
 
 **Request**
 
-```https://api.serverdensity.com/1.4/alerts/list?account=example.serverdensity.com```
+`https://api.serverdensity.com/1.4/alerts/list?account=example.serverdensity.com`
 
 **Response**
 
@@ -293,7 +293,7 @@ Returns all configured alerts.
 
 Pause
 --
-```POST /alerts/pause```
+`POST /alerts/pause`
 
 Pauses a specific alert.
 
@@ -303,7 +303,7 @@ Pauses a specific alert.
 
 **Request**
 
-```https://api.serverdensity.com/1.4/alerts/pause?account=boxedice.serverdensity.com```
+`https://api.serverdensity.com/1.4/alerts/pause?account=boxedice.serverdensity.com`
 
 **Response**
 
@@ -328,7 +328,7 @@ Resumes a specific alert.
 
 **Request**
 
-```https://api.serverdensity.com/1.4/alerts/resume?account=boxedice.serverdensity.com```
+`https://api.serverdensity.com/1.4/alerts/resume?account=boxedice.serverdensity.com`
 
 **Response**
 
