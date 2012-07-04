@@ -1,12 +1,12 @@
 Alerts
 ===
 * [Get history](#get-history) - returns the full history for each time a specific alert has been triggered.
-* [getLast](#get-last) - returns the last 5 triggered alerts across the whole account.
-* [getOpen](#get-open) - returns the current open, non-fixed alerts.
-* [getOpenNotified](#get-open-notified)` - returns the current open, non-fixed alerts which have sent notifications.
-* [list](#list) - returns all configured alerts.
-* [pause](#pause) - pauses a specific alert.
-* [resume](#resume) - resumes a specific alert.
+* [Get last](#get-last) - returns the last 5 triggered alerts across the whole account.
+* [Get open](#get-open) - returns the current open, non-fixed alerts.
+* [Get open notified](#get-open-notified)` - returns the current open, non-fixed alerts which have sent notifications.
+* [List](#list) - returns all configured alerts.
+* [Pause](#pause) - pauses a specific alert.
+* [Resume](#resume) - resumes a specific alert.
 
 Get history
 --
