@@ -303,7 +303,7 @@ Pauses a specific alert.
 
 **Request**
 
-`https://api.serverdensity.com/1.4/alerts/pause?account=boxedice.serverdensity.com`
+`https://api.serverdensity.com/1.4/alerts/pause?account=example.serverdensity.com`
 
 **Response**
 
@@ -328,7 +328,7 @@ Resumes a specific alert.
 
 **Request**
 
-`https://api.serverdensity.com/1.4/alerts/resume?account=boxedice.serverdensity.com`
+`https://api.serverdensity.com/1.4/alerts/resume?account=example.serverdensity.com`
 
 **Response**
 
