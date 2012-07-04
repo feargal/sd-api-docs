@@ -1,6 +1,6 @@
 Alerts
 ===
-* `getHistory` - returns the full history for each time a specific alert has been triggered.
+* **Get history** - returns the full history for each time a specific alert has been triggered.
 * `getLast` - returns the last 5 triggered alerts across the whole account.
 * `getOpen` - returns the current open, non-fixed alerts.
 * `getOpenNotified` - returns the current open, non-fixed alerts which have sent notifications.
@@ -62,4 +62,61 @@ Returns the full history for each time a specific alert has been triggered.
             }
         ]
     }
-}```
+}
+```
+
+Get last
+--
+``GET /alerts/getLast``
+
+Returns the last 5 triggered alerts across the whole account.
+
+**Request**
+
+```GET http://api.serverdensity.com/1.4/alerts/getLast?account=example.serverdensity.com```
+
+**Response**
+```json
+{
+    "status": 1,
+    "data": {
+        "alerts": [
+            {
+                "alert": {
+                    "alertId": "4fa4262a1212bac21b000045",
+                    "timeAlertedGMT": "2012-07-04T10:45:28+00:00",
+                    "checkType": "loadAvrg",
+                    "triggeredValue": "2.58",
+                    "notificationType": "email",
+                    "fixed": "0",
+                    "timeAlerted": "2012-07-04T11:45:28+00:00",
+                    "timeAlertedText": "4 mins ago",
+                    "checkTypeText": "System: Load average",
+                    "paused": 0,
+                    "notificationTypes": [
+                        "E-mail"
+                    ]
+                },
+                "users": [
+                    {
+                        "userId": "4b7094736593e1737c376633",
+                        "userIdOld": 7,
+                        "username": "pagerduty-noncritical",
+                        "firstName": "PagerDuty",
+                        "lastName": "Non-critical",
+                        "admin": false
+                    }
+                ],
+                "device": {
+                    "serverId": "4f27c64cfe4bb6a16c00018c",
+                    "serverIdOld": 260,
+                    "name": "puppet",
+                    "group": "",
+                    "os": "linux"
+                }
+            },
+            ...
+        ]
+    }
+}
+```
