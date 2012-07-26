@@ -9,7 +9,7 @@ Clients
 
 Methods
 --
-* Alerts
+* [Alerts](sd-api-docs/blob/master/docs/alerts.md)
 * Devices
 * Metrics
 * MongoDB
@@ -25,7 +25,7 @@ Versioning
 --
 All requests must access a specific API version, which is appended to the URL e.g. `https://api.serverdensity.com/1.4/`. 
 
-See the Release Notes for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
+See the [Release Notes](sd-api-docs/blob/master/docs/release-notes.md) for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
 
 Authentication
 --
@@ -40,3 +40,7 @@ Authentication is through Basic HTTP Auth against your Server Density account. E
 **Example**
 
     https://username:password@api.serverdensity.com/1.4/alerts/list?account=llama.serverdensity.com
+
+**API keys**
+
+We used to require a separate registration to obtain an API key in order to access the API. This proved to be unncessarily complicated so we have removed the need for keys and separate developer accounts.
