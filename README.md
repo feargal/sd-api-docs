@@ -9,7 +9,7 @@ Clients
 
 Methods
 --
-* [Alerts](sd-api-docs/blob/master/docs/alerts.md)
+* [Alerts](sd-api-docs/blob/master/sections/alerts.md)
 * Devices
 * Metrics
 * MongoDB
@@ -25,7 +25,7 @@ Versioning
 --
 All requests must access a specific API version, which is appended to the URL e.g. `https://api.serverdensity.com/1.4/`. 
 
-See the [Release Notes](sd-api-docs/blob/master/docs/release-notes.md) for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
+See the [Release Notes](sd-api-docs/blob/master/sections/release-notes.md) for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
 
 Authentication
 --
