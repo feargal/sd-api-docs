@@ -7,6 +7,8 @@ Clients
 * PHP - [Server Density API](https://github.com/andrew-waters/Server-Density-API) (Andrew Waters)
 * Python - [py-serverdensity](http://pypi.python.org/pypi/py-serverdensity/) (Wes Mason)
 
+And see [this support article for help with using curl](http://support.serverdensity.com/knowledgebase/articles/71130-using-the-api-with-curl).
+
 Methods
 --
 * [Alerts](sd-api-docs/blob/master/sections/alerts.md)
