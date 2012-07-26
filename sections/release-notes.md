@@ -1,5 +1,9 @@
 Any changes and updates to the API will be noted here. Major releases will be announced on the [Server Density blog](http://blog.serverdensity.com).
 
+1.4.3 (26 July 2012)
+---
+* New `alerts/add` and `alerts/delete` methods.
+
 1.4.2 (15 June 2012)
 ---
 * `services/list` method now returns the last check information for each region and takes an optional `regionsInfo` parameter to return meta data about each region (name, city, country, provider and co-ordinates).
