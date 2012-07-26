@@ -15,6 +15,8 @@ Add
 
 Adds a new alert.
 
+*Users can only add alerts for devices/services they have permission to access. If they are not an admin user they can only add alerts for themself.*
+
 **Parameters - general**
 
 * `userId` *array* - Array of one or more user IDs to be notified when this alert triggers. Use the `users/list` method and provide the numerical user ID from the `userIdOld` field. One of the array items can also be `pagerduty` if you wish to notify PagerDuty through our integration. To notify all members of the group the device/service belongs to, include `group` as one of the array items.
@@ -385,6 +387,8 @@ Pause
 
 Pauses a specific alert.
 
+*Only admin users can use this method*
+
 **Parameters**
 
 * `alertId` *string* - You can find this value by calling the `list` method or looking at the ID at the end of the URLs for editing an alert in the web interface.
@@ -409,6 +413,8 @@ Resume
 ```POST /alerts/resume```
 
 Resumes a specific alert.
+
+*Only admin users can use this method*
 
 **Parameters**
 
