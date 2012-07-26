@@ -35,14 +35,18 @@ MongoDB
 * `mongoDBReplOptime` MongoDB replication - last optime
 * `mongoDBReplCheck` MongoDB Replication - master failover/promotion
 
+
 * `mongoDBCurrentConnections` MongoDB connections - current
 * `mongoDBAvailableConnections` MongoDB connections - available
+
 
 * `mongoDBTotalIndexSize` MongoDB total index size
 * `mongoDBTotalDataSize` MongoDB total data size
 
+
 * `mongoDBLockQueueReaders` MongoDB lock queue - readers
 * `mongoDBLockQueueWriters` MongoDB lock queue - writers
+
 
 * `mongoDBInsertOpCounters` MongoDB insert operations per second
 * `mongoDBQueryOpCounters` MongoDB query operations per second
@@ -51,14 +55,17 @@ MongoDB
 * `mongoDBGetmoreOpCounters` MongoDB getmore operations per second
 * `mongoDBCommandOpCounters` MongoDB command operations per second
 
+
 * `mongoDBResidentMemory` MongoDB memory - resident
 * `mongoDBVirtualMemory` MongoDB memory - virtual
 * `mongoDBMappedMemory` MongoDB memory - mapped
+
 
 * `mongoDBAccessesIndex` MongoDB index accesses per second
 * `mongoDBHitsIndex` MongoDB index hits per second
 * `mongoDBMissesIndex` MongoDB index misses per second
 * `mongoDBMissRatioIndex` MongoDB index miss ratio per second
+
 
 * `mongoDBRegularAsserts` MongoDB asserts - regular per second
 * `mongoDBWarningAsserts` MongoDB asserts - warning per second
@@ -108,7 +115,9 @@ System
 ---
 * `loadAvrg` Load average
 
+
 * `diskUsagePercent` % disk usage
+
 
 * `ioStatsReadRequestsMerged` I/O - read requests merged per second
 * `ioStatsWriteRequestsMerged` I/O - write requests merged per second
@@ -122,6 +131,7 @@ System
 * `ioStatsAverageServiceTime` I/O - average service time (ms)
 * `ioStatsPercentUtil` I/O - percentage of CPU time
 
+
 * `cpuStatsUserLevel` CPU - user level
 * `cpuStatsNice` CPU - user level nice priority
 * `cpuStatsSys` CPU - system level
@@ -132,10 +142,12 @@ System
 * `cpuStatsGuest` CPU - guest
 * `cpuStatsIdle` CPU - idle
 
+
 * `memPhysUsed` Memory - physical - used
 * `memPhysFree` Memory - physical - free
 * `memCached` Memory - physical - cached
 * `memSwapUsed` Memory - swap - used
 * `memSwapFree` Memory - swap - free
+
 
 * `processCount` Process count
