@@ -27,7 +27,7 @@ Adds a new alert.
     * `sms`
     * `iphonepush`
     * `androidpush`
-* `checkType` *string* - One of the [check types](sd-api-docs/blob/master/sections/alerts-check-types.md).
+* `checkType` *string* - One of the [check types](alerts-check-types.md).
 * `comparison` *string* - The comparison for the alert threshold:
     * `<`
     * `<=`

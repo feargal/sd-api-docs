@@ -1,6 +1,6 @@
 Alert Check Types
 ===
-Check type for the `alerts/add` API method. These are values for the `checkType` parameter. See the [Alerts docs](sd-api-docs/blob/master/sections/alerts.md#add) for details
+Check type for the `alerts/add` API method. These are values for the `checkType` parameter. See the [Alerts docs](alerts.md#add) for details
 
 Apache
 ---
