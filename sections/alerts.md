@@ -1,6 +1,7 @@
 Alerts
 ===
 * [Add](#add) - adds a new alert.
+* [Delete](#delete) - deletes a specific alert.
 * [Get history](#get-history) - returns the full history for each time a specific alert has been triggered.
 * [Get last](#get-last) - returns the last 5 triggered alerts across the whole account.
 * [Get open](#get-open) - returns the current open, non-fixed alerts.
@@ -72,7 +73,9 @@ These parameters must also be provided for certain check types. Be sure to [read
 ```json
 {
     "status": 1,
-    "alertId": "4e7551da150ba0e8140009ae"
+    "data": {
+        "alertId": "4e7551da150ba0e8140009ae"
+    }
 }
 ```
 
@@ -96,6 +99,33 @@ curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/1.4/alerts/add?
 -d notificationDelayImmediately=true \
 -d notificationFrequency=60 \
 -d diskUsageMountPoint=%2F
+```
+
+Delete
+--
+```POST /alerts/delete```
+
+Deletes a specific alert.
+
+*Only admin users can use this method*
+
+**Parameters**
+
+* `alertId` *string* - You can find this value by calling the `list` method or looking at the ID at the end of the URLs for editing an alert in the web interface.
+
+**Request**
+
+`https://api.serverdensity.com/1.4/alerts/delete?account=example.serverdensity.com`
+
+**Response**
+
+```json
+{
+    "status": 1,
+    "data": {
+        "alertDeleted": 1
+    }
+}
 ```
 
 Get history
