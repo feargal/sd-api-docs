@@ -20,9 +20,9 @@ Adds a new alert.
 
 **Parameters - general**
 
-* `userId` *array* - Array of one or more user IDs to be notified when this alert triggers. Use the `users/list` method and provide the numerical user ID from the `userIdOld` field. One of the array items can also be `pagerduty` if you wish to notify PagerDuty through our integration. To notify all members of the group the device/service belongs to, include `group` as one of the array items.
+* `userId[]` *array* - Array of one or more user IDs to be notified when this alert triggers. Use the `users/list` method and provide the numerical user ID from the `userIdOld` field. One of the array items can also be `pagerduty` if you wish to notify PagerDuty through our integration. To notify all members of the group the device/service belongs to, include `group` as one of the array items.
 * `serverId` *string* or *int* - The ID for the device/service to create this alert for. For devices, the numerical ID from the `deviceIdOld` field when calling the `devices/list` method. For services, the 32 bit string from the `_id` field when calling the `services/list` method.
-* `notificationType` *array* - Array of one or more notification types: 
+* `notificationType[]` *array* - Array of one or more notification types: 
     * `email`
     * `sms`
     * `iphonepush`
